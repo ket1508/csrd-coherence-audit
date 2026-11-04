@@ -160,8 +160,8 @@ footer nav{display:flex;gap:16px;flex-wrap:wrap}
     <div class="cards">
       <div class="c v"><div class="top"><span class="who2">Schneider Electric</span><span class="ver">✓ Verified by hand</span></div><h3>Two sections, two different spending totals</h3><p>One section itemizes €54.2M of 2024 climate spending. Another reports €41.6M for the same plan and year. Nothing in the report reconciles them.</p></div>
       <div class="c"><div class="top"><span class="who2">Unilever</span><span class="sev">High</span></div><h3>The plan isn't in the spending</h3><p>The climate plan relies on solar, heat pumps and electric vehicles. The spending data shows 0% of investment qualifying as green under EU rules. <span class="pg">p. 266–267</span></p></div>
-      <div class="c"><div class="top"><span class="who2">Unilever</span><span class="sev med">Medium</span></div><h3>Two reasons for one number</h3><p>The same page explains that 0% two ways: missing paperwork, and EU rules not covering its industry. They can't both be the main reason. <span class="pg">p. 266</span></p></div>
-      <div class="c"><div class="top"><span class="who2">Schneider Electric</span><span class="sev">High</span></div><h3>A risk one team saw and the other didn't</h3><p>14% of revenue fails EU green criteria over chemical-safety rules. The climate plan never mentions it.</p></div>
+      <div class="c"><div class="top"><span class="who2">Unilever</span><span class="sev med">Medium</span></div><h3>Two reasons for one number</h3><p>The same page explains that 0% two ways: missing paperwork, and EU rules not covering its industry. They point in different directions. <span class="pg">p. 266</span></p></div>
+      <div class="c"><div class="top"><span class="who2">Schneider Electric</span><span class="sev">High</span></div><h3>A risk one section flags and the other skips</h3><p>14% of revenue fails EU green criteria over chemical-safety rules. None of the climate plan's levers address it. <span class="pg">p. 159</span></p></div>
     </div>
     <p class="more">Context: EU rules (CSRD) now require about 11,700 companies to publish detailed sustainability reports. The climate section and the "green spending" section are written separately and rarely cross-checked. <a href="https://github.com/ket1508/csrd-coherence-audit/blob/main/findings_report.md" target="_blank" rel="noopener">All findings ↗</a></p>
   </section>
@@ -174,13 +174,13 @@ footer nav{display:flex;gap:16px;flex-wrap:wrap}
       <div><span class="t">Traceability</span><b>Every number has a page</b><p>Page markers are injected into the text, so each extracted value and finding cites its source.</p></div>
       <div><span class="t">Workflow</span><b>Extract, then reason</b><p>Two extraction calls produce clean data, and a third reasons over that data instead of raw text. One reusable function runs any company with no custom logic.</p></div>
       <div><span class="t">Reliability</span><b>Plan for failure</b><p>Long outputs hit the token limit and broke the JSON. The pipeline flags the parse failure, and just that step re-runs with a higher limit.</p></div>
-      <div><span class="t">Human in the loop</span><b>Findings are leads</b><p>Every finding is checked against the source before anyone relies on it, the way I verified the Schneider gap.</p></div>
+      <div><span class="t">Human in the loop</span><b>Findings are leads</b><p>The model's output is a starting point. Every finding cites pages so it can be checked, and I verified the Schneider gap against the report by hand.</p></div>
     </div>
     <p class="next"><b>Next:</b> a labeled benchmark of reports with known issues, to measure how many real problems it catches and how often it's wrong.</p>
   </section>
 
   <footer>
-    <div><strong>Ketki Sawant</strong><br>Former EU Taxonomy analyst, Morningstar Sustainalytics · MQE, UCLA</div>
+    <div><strong>Ketki Sawant</strong><br>Ex-Morningstar Sustainalytics · MQE, UCLA</div>
     <nav><a href="https://github.com/ket1508/csrd-coherence-audit" target="_blank" rel="noopener">GitHub ↗</a><a href="https://www.linkedin.com/in/ketki-sawant-335aba1b5/" target="_blank" rel="noopener">LinkedIn ↗</a><a href="https://ket1508.github.io/texas-renewables-ai/" target="_blank" rel="noopener">Texas grid research ↗</a></nav>
   </footer>
 </div>
