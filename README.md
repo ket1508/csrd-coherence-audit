@@ -45,15 +45,15 @@ Both companies analyzed using the same pipeline, no custom logic:
 - 305-page Annual Report
 - 0% Taxonomy-aligned capex despite a detailed, SBTi-validated transition plan
 - 9 specific coherence findings (6 HIGH severity)
-- Flagged: same activities (solar PV, heat pumps, vehicle electrification) named as transition levers in E1 but 0% aligned in Taxonomy. Two contradictory explanations for non-alignment on the same page. 88% of "eligible" capex is passive building ownership.
+- Flagged: same activities (solar PV, heat pumps, vehicle electrification) named as transition levers in E1 but 0% aligned in Taxonomy. Two explanations for non-alignment on the same page that are in tension (structural ineligibility vs. insufficient documentation). 88% of "eligible" capex is passive building ownership.
 
 ### Schneider Electric (FY2024) — Coherence: MEDIUM
 - 676-page Universal Registration Document
 - 22% Taxonomy-aligned capex, 28% aligned turnover
 - 12 specific coherence findings (5 HIGH severity)
-- Flagged: arithmetic inconsistency in transition capex breakdown (€39.8M + €14.4M ≠ €41.6M). 14% of revenue non-aligned due to chemical substance compliance issues, completely absent from the E1 transition plan narrative — strongly suggesting the ESRS and Taxonomy teams worked in isolation.
+- Flagged: transition capex line items (€39.8M electrification + €14.4M SF6 phase-down) that don't reconcile to the reported €41.6M total, with no bridge provided. 14% of revenue non-aligned due to chemical substance compliance issues, absent from the E1 transition plan narrative — suggesting limited cross-referencing between the ESRS and Taxonomy sections.
 
-**The comparative insight:** the two companies fail coherence in *fundamentally different categories*. Sector-mismatched reporters (Unilever, FMCG) fail on transition-plan-vs-alignment gaps and contradictory sector-framing. Sector-aligned reporters (Schneider, industrial) fail on intra-disclosure arithmetic and cross-team coordination. Different risk profiles call for different audit-readiness checks. The same pipeline catches both.
+**The comparative insight:** the two companies fail coherence in *fundamentally different categories*. Sector-mismatched reporters (Unilever, FMCG) fail on transition-plan-vs-alignment gaps and conflicting sector-framing. Sector-aligned reporters (Schneider, industrial) fail on unreconciled figures and gaps between report sections. Different risk profiles call for different audit-readiness checks. The same pipeline catches both.
 
 See `findings_report.md` for the full comparative report.
 
@@ -79,7 +79,7 @@ The three prompts are the engineering work. They are saved as numbered `.txt` fi
 
 ## Limitations and what I'd build next
 
-This is a weekend prototype, not a production tool. Real limitations:
+This is a prototype, not a production tool. Real limitations:
 
 1. **Keyword-based section detection is brittle.** Different report formats (Universal Registration Document vs. Annual Report vs. standalone Sustainability Report) structure these sections differently. A production version would use document layout analysis or an LLM-based section classifier.
 2. **Two extractions, one cross-check.** Real CSRD coherence audit would extend across all 12 ESRS standards plus Taxonomy plus the financial statements. Same pipeline shape, more pairings.
@@ -92,4 +92,6 @@ If I were continuing this in a customer-facing role, the highest-leverage extens
 
 ## About this project
 
-Built as a portfolio piece by Ketki Sawant ([LinkedIn](https://www.linkedin.com/in/ketki-sawant-335aba1b5/)). I spent two years at Morningstar Sustainalytics on EU Taxonomy and reporting frameworks, and I'm now pursuing a Master of Quantitative Economics at UCLA. This project sits at the intersection of those two things: domain depth on the disclosure regimes, plus AI tooling for the parts of the workflow that don't scale with human effort.
+Built as a portfolio piece by Ketki Sawant ([LinkedIn](https://www.linkedin.com/in/ketki-sawant-335aba1b5/)). I spent two years at Morningstar Sustainalytics on EU Taxonomy and reporting frameworks, and hold a Master of Quantitative Economics from UCLA. This project sits at the intersection of those two things: domain depth on the disclosure regimes, plus AI tooling for the parts of the workflow that don't scale with human effort.
+
+Also by me: [Can Texas's Renewables Keep Up?](https://github.com/ket1508/texas-renewables-ai), an econometric study of AI data center demand in the Texas grid ([interactive site](https://ket1508.github.io/texas-renewables-ai/)).

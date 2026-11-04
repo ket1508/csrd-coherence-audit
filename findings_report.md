@@ -6,6 +6,8 @@
 
 **Approach:** automated PDF section detection → structured data extraction → LLM-based coherence reasoning across two related disclosures.
 
+**Note:** company findings below are the pipeline's output, reproduced as generated. Each cites page numbers so it can be checked against the source report; treat them as questions for review, not verified conclusions.
+
 ---
 
 ## Unilever PLC
@@ -98,7 +100,7 @@ The Taxonomy discloses that 14% of revenues are non-aligned due to PPC DNSH non-
 
 The same pipeline surfaces fundamentally different *categories* of disclosure issues depending on company profile:
 
-- **Sector-mismatched reporters (Unilever, FMCG):** Failure modes concentrate around transition-plan-vs-alignment gaps, contradictory sector-framing explanations, and 0%-aligned activities that map to stated transition levers.
-- **Sector-aligned reporters (Schneider, industrial electrification):** Failure modes concentrate around intra-disclosure arithmetic errors, cross-team coordination gaps, methodology denominator inflation, and missing reconciliation between framework-specific quantifications of the same underlying activities.
+- **Sector-mismatched reporters (Unilever, FMCG):** Failure modes concentrate around transition-plan-vs-alignment gaps, conflicting sector-framing explanations, and 0%-aligned activities that map to stated transition levers.
+- **Sector-aligned reporters (Schneider, industrial electrification):** Failure modes concentrate around unreconciled figures within a disclosure, gaps between report sections, narrowly defined denominators, and missing reconciliation between framework-specific quantifications of the same underlying activities.
 
 Both verdicts (LOW for Unilever, MEDIUM for Schneider) are substantively defensible. Total compute cost: under $1.00 per company.
