@@ -2,6 +2,8 @@
 
 **An LLM pipeline that audits coherence between ESRS E1 climate disclosures and EU Taxonomy disclosures in published CSRD reports.**
 
+🌐 **Interactive demo:** https://ket1508.github.io/csrd-coherence-audit/
+
 Most automated CSRD tooling focuses on extracting numbers from disclosures. This project explores a different question: **do the numbers, narratives, and methodology choices in different parts of the same report tell a coherent story?**
 
 The pipeline ingests a published CSRD-aligned annual report, extracts structured data from both the ESRS E1 (climate change) section and the EU Taxonomy section, then runs an LLM-based coherence audit across the two — surfacing contradictions, methodology asymmetries, and ambition-vs-investment gaps that human reviewers typically catch only after hours of careful reading.
