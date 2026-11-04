@@ -51,7 +51,7 @@ Both companies analyzed using the same pipeline, no custom logic:
 - 676-page Universal Registration Document
 - 22% Taxonomy-aligned capex, 28% aligned turnover
 - 12 specific coherence findings (5 HIGH severity)
-- Flagged: transition capex line items (€39.8M electrification + €14.4M SF6 phase-down) that don't reconcile to the reported €41.6M total, with no bridge provided. 14% of revenue non-aligned due to chemical substance compliance issues, absent from the E1 transition plan narrative — suggesting limited cross-referencing between the ESRS and Taxonomy sections.
+- Flagged: transition capex line items (€39.8M electrification + €14.4M SF6 phase-down) that don't reconcile to the €41.6M reported elsewhere as 2024 transition-plan capex, with no bridge provided (manually verified against the source report). 14% of revenue non-aligned due to chemical substance compliance issues, absent from the E1 transition plan narrative — suggesting limited cross-referencing between the ESRS and Taxonomy sections.
 
 **The comparative insight:** the two companies fail coherence in *fundamentally different categories*. Sector-mismatched reporters (Unilever, FMCG) fail on transition-plan-vs-alignment gaps and conflicting sector-framing. Sector-aligned reporters (Schneider, industrial) fail on unreconciled figures and gaps between report sections. Different risk profiles call for different audit-readiness checks. The same pipeline catches both.
 
